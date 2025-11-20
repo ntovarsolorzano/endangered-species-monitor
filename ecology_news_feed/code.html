@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Positive Eco News Feed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13ec6a",
+              "background-light": "#f6f8f7",
+              "background-dark": "#102217",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex flex-col bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-[#0d1b13] dark:text-background-light text-2xl">eco</span>
+</div>
+<h1 class="text-[#0d1b13] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Positive Eco News</h1>
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-[#0d1b13] dark:text-background-light text-2xl">search</span>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 px-4 pb-4 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-[#0d1b13] text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 pl-4 pr-4">
+<p class="text-[#0d1b13] dark:text-background-light text-sm font-medium leading-normal">Recoveries</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 pl-4 pr-4">
+<p class="text-[#0d1b13] dark:text-background-light text-sm font-medium leading-normal">New Species</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 pl-4 pr-4">
+<p class="text-[#0d1b13] dark:text-background-light text-sm font-medium leading-normal">Conservation</p>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-4 p-4 pt-0">
+<!-- Card 1 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-black/20 overflow-hidden shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="A majestic humpback whale breaching out of the ocean water with a splash." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBO3cAbjgpGpVDTup60jJXcNBjoDPUiaPfzNeKwbqYHrg1cySa5AOj-VhshcLy95QKustMpIVmVjzhVl22evsgO3rd4DTRA5GfVU8hQ_vbd3tQT8vVB3o8K8Itew-W3eiuQzM9p-HpQHuc1MvKLIzLKp-mCbf51iFVaN9Nh3NhOqLefGA1q3QceEh8bf_gQHFMyZdLvXxdP_tR2pdmNMfx2Od5dOcZwJcWYzhNTXfKK_ZZ_3vA1YrPUZ8mKvJNQMqpdCrcbQIMSq6U");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-3 p-4">
+<p class="text-[#0d1b13] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">Population of Humpback Whales Rebounds</p>
+<p class="text-[#4c9a6b] dark:text-gray-300 text-base font-normal leading-normal">A new study reveals a remarkable recovery for the once-endangered whale species, thanks to international conservation efforts.</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">National Geographic | Oct 26, 2023</p>
+<div class="flex items-center gap-4 justify-between mt-2">
+<button class="flex-1 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b13] text-sm font-medium leading-normal">
+<span class="truncate">Read More</span>
+</button>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-[#0d1b13] dark:text-background-light">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-black/20 overflow-hidden shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="A small, colorful chameleon perched on a green leaf in a lush forest." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCwuUNiioVT_M2QKG3SKfZC_LmkDaFOPbY2Hos_bC_6xFw262drK8uFNDiICu3hYT635M98hxpql54I3mqLbthqaDLCd5QiX4BG4lPTjvpp-THH8p1itDyIKvrH33hJpdAZOGtebHum3lQgkXEJKU9md5t8TfmdvMZkJGfwvMexl0Y_dUIBrLZp-yV_ezsVMAAuJyvCATqwFr0AM9lv7Bw6SokVopcmKpsA7wTXOWUa9ZEaRZ11PU9bJqs-P4WhRONSwXIs14-rBtg");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-3 p-4">
+<p class="text-[#0d1b13] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">New Chameleon Species Discovered in Tanzania</p>
+<p class="text-[#4c9a6b] dark:text-gray-300 text-base font-normal leading-normal">Researchers have identified a vibrant new species of chameleon in the Usambara Mountains, highlighting the region's unique biodiversity.</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Nature Journal | Oct 24, 2023</p>
+<div class="flex items-center gap-4 justify-between mt-2">
+<button class="flex-1 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b13] text-sm font-medium leading-normal">
+<span class="truncate">Read More</span>
+</button>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-[#0d1b13] dark:text-background-light">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-black/20 overflow-hidden shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="A giant panda sitting on the ground and eating bamboo in a green forest." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVdvS4tcaO7b5xHXM3ZPZoMC0zRNpgKtpq6suhaTU7QL9YOdL-Eg2osE2pqazN2y0Gkxa2AK9uQ2ivMGPeEhaFdz3wJdIG7W2XujPafqjjcAKOHReUICQZAm7fhnC830gUoMyGUUhAr1qrSdCtdQodYJ5YgpvnOs1UnNkoi0d-JhbF1MKfarnTg_mFVb9jIFll_oaW1rDP00IqMEdfjnYuM6h5MjBHhAor0Fof-GuNGN83g5nttMp7AEvVzullLsPbTr2kk-DIolQ");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-3 p-4">
+<p class="text-[#0d1b13] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">Giant Panda No Longer Endangered</p>
+<p class="text-[#4c9a6b] dark:text-gray-300 text-base font-normal leading-normal">Decades of conservation work have paid off as the giant panda's status is upgraded from 'endangered' to 'vulnerable' by the IUCN.</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">WWF News | Oct 22, 2023</p>
+<div class="flex items-center gap-4 justify-between mt-2">
+<button class="flex-1 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b13] text-sm font-medium leading-normal">
+<span class="truncate">Read More</span>
+</button>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-[#0d1b13] dark:text-background-light">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- End of Feed Message -->
+<div class="flex flex-col items-center justify-center gap-4 py-8 text-center">
+<span class="material-symbols-outlined text-4xl text-primary">done_all</span>
+<p class="text-gray-600 dark:text-gray-400">You're all caught up!</p>
+</div>
+</main>
+</div>
+</body></html>
