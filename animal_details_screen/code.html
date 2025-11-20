@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Endangered Animal Information</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 backdrop-blur-sm justify-between">
+<div class="text-neutral-900 dark:text-white flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Amur Leopard</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<!-- Header Image -->
+<div class="@container px-4">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden min-h-[320px] rounded-xl" data-alt="Close-up photograph of an Amur Leopard resting on a rock, its spotted coat visible in detail." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgjPJ3lnkO-_jDz0XLUWeiHIpKu7ZyadtNu_mRoOp10sDiolMVUjyv-Hfv5OSgmT_kzzhUp_9WI4RUPA_DRbzTa5Be7pIXX-pWa1sbqKmikJbk29W6iMzqQ_DqKWQjWG1_KeS45FLnEKMp4Ify9gyWuDWwhl9QrFecxwDFadwBDzdZBDHXHVfDSvbcnr2vJHaipxOP6BmBY0c6oHOL0T2k8METG5GAgMDi384qWOFT9bQ1j9Y8J989e_uPeiVlmnvLHPEt26wc1Zw");'></div>
+</div>
+<!-- Headline & Chips -->
+<div class="px-4">
+<h1 class="text-neutral-900 dark:text-white tracking-light text-[32px] font-bold leading-tight text-left pb-2 pt-6">Amur Leopard</h1>
+<p class="text-neutral-600 dark:text-neutral-400 text-base italic leading-normal pb-3">Panthera pardus orientalis</p>
+<div class="flex gap-3 pb-3 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-red-600/20 px-4">
+<p class="text-red-500 text-sm font-medium leading-normal">Critically Endangered</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+<p class="text-primary text-sm font-medium leading-normal">Mammal</p>
+</div>
+</div>
+</div>
+<!-- Information Sections -->
+<div class="flex flex-col gap-6 px-4 py-6">
+<!-- Habitat Section -->
+<div class="flex flex-col gap-3 rounded-xl bg-neutral-200/50 dark:bg-neutral-800/20 p-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-neutral-600 dark:text-neutral-400">forest</span>
+<h3 class="text-lg font-bold text-neutral-900 dark:text-white">Habitat</h3>
+</div>
+<p class="text-neutral-700 dark:text-neutral-300 text-base leading-relaxed">
+          Amur leopards are adapted to the cool, temperate forests of the Russian Far East and northern China. They prefer areas with rugged, rocky terrain and dense vegetation which provide cover for hunting and raising cubs.
+        </p>
+</div>
+<!-- Threats Section -->
+<div class="flex flex-col gap-3 rounded-xl bg-neutral-200/50 dark:bg-neutral-800/20 p-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-neutral-600 dark:text-neutral-400">warning</span>
+<h3 class="text-lg font-bold text-neutral-900 dark:text-white">Threats</h3>
+</div>
+<p class="text-neutral-700 dark:text-neutral-300 text-base leading-relaxed">
+          The primary threats to the Amur leopard are poaching, both of leopards and their prey, habitat loss from logging and human settlement, and a critically small gene pool which makes the population vulnerable to disease.
+        </p>
+</div>
+<!-- Geographic Range Section -->
+<div class="flex flex-col gap-4 rounded-xl bg-neutral-200/50 dark:bg-neutral-800/20 p-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-neutral-600 dark:text-neutral-400">public</span>
+<h3 class="text-lg font-bold text-neutral-900 dark:text-white">Geographic Range</h3>
+</div>
+<div class="w-full h-48 rounded-lg overflow-hidden bg-neutral-300 dark:bg-neutral-900/50">
+<img class="w-full h-full object-cover" data-alt="Map showing the border region between Russia, China, and North Korea, highlighting the habitat of the Amur Leopard." data-location="Russian Far East and Northern China" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyt07peDnNTo3LJhtdLx4Dv3xWFkmGxN6RwvNbMEllP1UNtcLr3ZgOmtJr-34Z24y8fJsnz87g71lWhRxw996AtyNnyiJQmBrBvZzO6HYMtza-vZ6tE_GJMpVrAb-jjicDKM1_hvHZ2zqLJm0XY2Bd4PXb-kDsk55sJcMiBdS4JetG-z95pwjHqhw_Vw3DjWxpO46JflD9HOTxkRzrmRd7M77Q8_UT1WwvRbjD_q3lWzwChyn7FGwiZGLRHpEHpoNi97CIESrfU2w"/>
+</div>
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-3">
+<span class="text-primary material-symbols-outlined">check_circle</span>
+<p class="text-neutral-700 dark:text-neutral-300">Russia (Primorsky Krai)</p>
+</li>
+<li class="flex items-center gap-3">
+<span class="text-primary material-symbols-outlined">check_circle</span>
+<p class="text-neutral-700 dark:text-neutral-300">China (Jilin Province)</p>
+</li>
+<li class="flex items-center gap-3">
+<span class="text-primary material-symbols-outlined">check_circle</span>
+<p class="text-neutral-700 dark:text-neutral-300">North Korea (possible small population)</p>
+</li>
+</ul>
+</div>
+<!-- Scientific Sources Section -->
+<div class="flex flex-col gap-3 rounded-xl bg-neutral-200/50 dark:bg-neutral-800/20 p-4">
+<details class="group">
+<summary class="flex cursor-pointer list-none items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-neutral-600 dark:text-neutral-400">science</span>
+<h3 class="text-lg font-bold text-neutral-900 dark:text-white">Scientific Sources</h3>
+</div>
+<span class="material-symbols-outlined text-neutral-600 dark:text-neutral-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-4 border-t border-neutral-300 dark:border-neutral-700 pt-4">
+<ul class="flex flex-col gap-3 text-neutral-700 dark:text-neutral-300">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1">link</span>
+<a class="underline" href="#">IUCN Red List of Threatened Species: Panthera pardus ssp. orientalis.</a>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1">link</span>
+<a class="underline" href="#">WWF. "Amur Leopard - The World's Rarest Cat." World Wildlife Fund.</a>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1">link</span>
+<a class="underline" href="#">Vitkalova, A.V. et al. (2018). "Transboundary cooperation improves endangered species monitoring and conservation." Conservation Letters.</a>
+</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+<div class="h-5"></div>
+</div>
+</body></html>

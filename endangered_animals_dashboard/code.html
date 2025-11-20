@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Endangered Species</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between bg-background-light dark:bg-background-dark">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">menu</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-zinc-900 dark:text-white">Endangered Species</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-zinc-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-zinc-500 dark:text-primary/70 flex border-zinc-200 dark:border-primary/20 bg-white dark:bg-background-dark/50 items-center justify-center pl-4 rounded-l-xl border-y border-l">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-zinc-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-zinc-200 dark:border-primary/20 bg-white dark:bg-background-dark/50 focus:border-primary/50 h-full placeholder:text-zinc-400 dark:placeholder:text-zinc-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search for a species..." value=""/>
+</div>
+</label>
+</div>
+<!-- Featured Animal Section -->
+<h2 class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Featured Animal</h2>
+<div class="p-4 pt-0 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] bg-white dark:bg-zinc-900/50">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Close-up of an Amur Leopard's face in a snowy environment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDucRAnYKIVmc6uB5iexxjVtKQB5W8SQNTPdd27fxIUQYGig0bYadgq-T69yv63qQR2AIfGkhbU5WwoC9vOs4Qyphj3CIxHTpPHLqXc4iB31Tm_a63kUZHT_XfH8uvWiAe2NXZNp5qC3J92GwS6hA81BMKVDpc1vj0Gt5ZiXJYeNLzVBfWDoiNSpvBYw3R9MTwIsWJ2b93iUc02WgCH2K7wpDs9hcdI6GtnaHw8nt3QFj5IEudVxwhFE2HZHyDyU15NtpIEQynBh3w");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Amur Leopard</p>
+<div class="flex items-end gap-3 justify-between">
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal">Panthera pardus orientalis</p>
+<p class="text-zinc-600 dark:text-zinc-400 text-base font-normal leading-normal">Fewer than 100 remain in the wild.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-medium leading-normal transition-transform active:scale-95">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- All Species Section -->
+<h2 class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">All Species</h2>
+<div class="flex flex-col gap-3 px-4 pb-8">
+<!-- Species Card: Vaquita -->
+<div class="flex w-full cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-900/50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-transform active:scale-[0.98]">
+<img class="size-16 shrink-0 rounded-lg object-cover" data-alt="A Vaquita porpoise swimming near the surface of the water." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF6tSQ0eL-KKYKcyGZn_ulE77VPSdDFN-9b6uD58kLfxcm4m0x2nP304CkOnHot8vGPUxM_FW01x-jgyPzOplfYNW1JbKrg9mcz99Pxoqzkt5xg6huJ7211mIrqoTMGkfoUP_N4sz6QDifvpwYXWe0STqqnoKCEOYuUrWzKrnxjmv5swc3QgDN-GZpN3HYi184-1FTJB0Rlw7YK6eZwM4CvtQT7UBdF3DYjPAyL5BBt2iUZRNaN06VJdlpWXa43-ihrw9Y24oFA6I"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="font-bold text-zinc-900 dark:text-white">Vaquita</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Phocoena sinus</p>
+</div>
+<div class="flex items-center justify-center rounded-full bg-[#D32F2F]/20 px-3 py-1">
+<p class="text-sm font-medium text-[#D32F2F]">CR</p>
+</div>
+</div>
+<!-- Species Card: Saola -->
+<div class="flex w-full cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-900/50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-transform active:scale-[0.98]">
+<img class="size-16 shrink-0 rounded-lg object-cover" data-alt="A Saola, also known as the Asian unicorn, in a dense forest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCss60nxLwxv2djSM6bYwlChRHfNU36LU33YR40EvAyyLzS6xF5kEsaXbXygir960Otim-Ev-KcrWjO5jNg_KUBVsixbfCPg94cL9zkkzxZ0VLG5MTgDiN9MfIaxTBugX-18W8FYbCq8j436yF4vXLx77tYNyr1kGNCVTSqLun5h_x-7TGfUC3D68Mio2o2AWQXe9MsIAc7IH3cAmMzlen22bnvp2TEhedERHz-tk6IA5HzTmMQ_UGqPJ9cJuBINdXJqWA1FW7U3lw"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="font-bold text-zinc-900 dark:text-white">Saola</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Pseudoryx nghetinhensis</p>
+</div>
+<div class="flex items-center justify-center rounded-full bg-[#D32F2F]/20 px-3 py-1">
+<p class="text-sm font-medium text-[#D32F2F]">CR</p>
+</div>
+</div>
+<!-- Species Card: Black Rhino -->
+<div class="flex w-full cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-900/50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-transform active:scale-[0.98]">
+<img class="size-16 shrink-0 rounded-lg object-cover" data-alt="A profile view of a Black Rhino standing in a savanna." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxX6IV8IYjb_bl5FeyeyQ7uBu4Xh2vXFmn9-Cag7mRcC8wyo_Xl_0NYPheQNqTvt4e-qHrOLw3ajLQ9rtrHBj87Rj4mFeDFBkqP42gm5t_CcMRNJXPpzVUmPkp0dRja-gN9JkrWmH13KRoSMbLMFt3K5GZQV5QvPP2blHJjzw6d9kNDOexsSvNT2--skEKWHQTK1vhWBEmvSbKVJ4hl0-gGGQRoLcTX49H5rVMBgQChrTlMS71w7f_wC-ZoSzMtixbJyVRbJMvNEQ"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="font-bold text-zinc-900 dark:text-white">Black Rhino</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Diceros bicornis</p>
+</div>
+<div class="flex items-center justify-center rounded-full bg-[#D32F2F]/20 px-3 py-1">
+<p class="text-sm font-medium text-[#D32F2F]">CR</p>
+</div>
+</div>
+<!-- Species Card: Sumatran Orangutan -->
+<div class="flex w-full cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-900/50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-transform active:scale-[0.98]">
+<img class="size-16 shrink-0 rounded-lg object-cover" data-alt="A Sumatran Orangutan with its young, hanging from a tree branch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0nyqkp4TtB_gB4DsfH2gTO3tEmMFRABJsfw5LOOvaZz2EyQoBGet8AFa8Dzzvw5-M4vSqx0DgFjyDpH8JtxxQfKZb0ts9URxThq_wQNan-Y7wb-xAqoKuZXcS9FTzKa93d40ktJFwrCGd_YtBwv6r4Mr9dEftCGTDAzqAEZ4QCDgQ3zymPxNGtt8lA_6aADr9RUi7spFdt-QJVOozrTs3jrx1-D4C20gt5rZ9JOWgNQPmBN8vMiaRFOTEjo6gPmNDpJbmJ0IrVW4"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="font-bold text-zinc-900 dark:text-white">Sumatran Orangutan</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Pongo abelii</p>
+</div>
+<div class="flex items-center justify-center rounded-full bg-[#D32F2F]/20 px-3 py-1">
+<p class="text-sm font-medium text-[#D32F2F]">CR</p>
+</div>
+</div>
+<!-- Species Card: Bluefin Tuna -->
+<div class="flex w-full cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-900/50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-transform active:scale-[0.98]">
+<img class="size-16 shrink-0 rounded-lg object-cover" data-alt="A large Bluefin Tuna swimming in deep blue ocean water." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvMlZA-QuvRtiMxYsrdGiv2SqyS8eq_vO5nCWiXvohHHcKDE3E-DjW-3Wy5DLJoJRYjwfYb_TJsOB1o_S7dsInm1HLcCLO4GNWht671CE5yyhyWy6nKBZ3fVudTEeYUhhap9B2rUfV_g3lCHn1GVrdmxTypwZ2_zmwyrJYrJ9LeEHT88kKU2YeMxQQGSqfc5wKhem7QuahTLBoK5GAAUCtXjnERjPcNAgqdwTSbCuzaz54rfYwDEqnigp9Em4-94GVcWsfz3obGog"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="font-bold text-zinc-900 dark:text-white">Bluefin Tuna</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Thunnus thynnus</p>
+</div>
+<div class="flex items-center justify-center rounded-full bg-[#EF6C00]/20 px-3 py-1">
+<p class="text-sm font-medium text-[#EF6C00]">EN</p>
+</div>
+</div>
+<!-- Species Card: Giant Panda -->
+<div class="flex w-full cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-zinc-900/50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-transform active:scale-[0.98]">
+<img class="size-16 shrink-0 rounded-lg object-cover" data-alt="A Giant Panda sitting on the ground eating bamboo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1BzFIw4nkNTefYQVKptKMUYiwp2re_Yj3tJp5ROJHgx8w1lfrtGNDGcMWfY_6a__lrixrWyajNmlM3WNdF_keLCd6nvVrixye98rtzHKIi9yGVJoPjnJ0fl2oIloPUWQY1AHx4TCg7eZdnAPfv_L70xJg097URSVOZkI-ICFO-rJq8rLqT1SruEnCWpNLAfSQ6tpIC5np3dnFLlmou2qdFurYWltksAaufZH0ut7DTyKgCP6DJmMfO7QN_ZAH9WepxhHpKmeL5cI"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="font-bold text-zinc-900 dark:text-white">Giant Panda</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Ailuropoda melanoleuca</p>
+</div>
+<div class="flex items-center justify-center rounded-full bg-[#FBC02D]/30 px-3 py-1">
+<p class="text-sm font-medium text-[#FBC02D]">VU</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>
